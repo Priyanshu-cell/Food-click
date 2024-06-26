@@ -1,0 +1,12 @@
+.my-item{
+  background-color: cyan;
+}
+
+.my-span{
+  font-weight: 500;
+  color: darkblue;
+}
+
+.button{
+  float: right;
+}
