@@ -1,5 +1,5 @@
 import styles from "./Item.module.css";
-const Item = ({ foodItem }) => {
+const Item = ({ foodItem, handleBuyBtn }) => {
 
   const handleBuyBtnClicked = (event) => {
     console.log(event);
@@ -11,7 +11,7 @@ const Item = ({ foodItem }) => {
       <span className={styles["my-span"]}>{foodItem}</span>
       <button
         className={`${styles.button} btn btn-info`}
-        onClick={(e) =>handleBuyBtnClicked(e)}
+        onClick={handleBuyBtn}
       >
         Buy
       </button>
@@ -19,3 +19,7 @@ const Item = ({ foodItem }) => {
   );
 };
 export default Item;
+
+//FoodItem is props
+//handleByBttn is behavior (clickable)
+//handleByBttn declare in FoodItem and use here

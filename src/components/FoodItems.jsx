@@ -6,7 +6,9 @@ const FoodItems = ({ itmes }) => {
     <ul className="list-group">
       {itmes.map((item, index) => (
         <React.Fragment key={index}>
-          <Item foodItem={item} />
+          <Item foodItem={item} 
+          handleBuyBtn={()=> console.log(`${item} clicked`)}
+          />
         </React.Fragment>
       ))}
     </ul>
@@ -15,3 +17,4 @@ const FoodItems = ({ itmes }) => {
 
 export default FoodItems;
 
+//pass handleByBttn and decides which operation will preform 
